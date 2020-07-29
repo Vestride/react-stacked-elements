@@ -1,0 +1,41 @@
+{
+  "name": "react-stacked-elements",
+  "version": "1.0.0",
+  "description": "Toggle the visibility of two elements without removing them from the document layout",
+  "source": "src/index.tsx",
+  "main": "dist/stacked-elements.js",
+  "module": "dist/stacked-elements.module.js",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/stacked-elements.umd.js",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch --jsx React.createElement",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "stack",
+    "elements",
+    "components"
+  ],
+  "author": "Glen Cheney",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@testing-library/react": "^10.4.7",
+    "@types/jest": "^26.0.7",
+    "babel-jest": "^26.1.0",
+    "jest": "^26.1.0",
+    "jest-circus": "^26.1.0",
+    "microbundle": "^0.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

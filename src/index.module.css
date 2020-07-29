@@ -1,0 +1,20 @@
+.wrapper {
+  display: 'grid';
+}
+
+.content {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.z0 {
+  z-index: 1;
+}
+
+.z1 {
+  z-index: 1;
+}

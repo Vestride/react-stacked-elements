@@ -1,0 +1,16 @@
+module.exports = {
+  testRunner: 'jest-circus/runner',
+  clearMocks: true,
+  transform: {
+    '\\.[jt]sx?$': [
+      'babel-jest',
+      {
+        presets: [
+          ['@babel/preset-env', { targets: { node: 'current' } }],
+          '@babel/preset-react',
+          '@babel/preset-typescript',
+        ],
+      },
+    ],
+  },
+};
