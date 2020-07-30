@@ -1,34 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './index.module.css';
-
 interface StackedElementsProps {
   className?: string;
   children: React.ReactNode;
   selectedIndex: number;
 }
 
-const StackedElements: React.FunctionComponent<StackedElementsProps> = ({ className, children, selectedIndex }) => {
-  const hiddenClasses = `${styles.invisible} ${styles.z0}`;
-  const visibleClass = styles.z1;
-  return (
-    <div className={`${styles.wrapper}${className ? ` ${className}` : ''}`}>
-      {React.Children.map(children, (child, i) => (
+const StackedElements: React.FunctionComponent<StackedElementsProps> = ({ className, children, selectedIndex }) => (
+  <div className={className} style={{ display: 'grid' }}>
+    {React.Children.map(children, (child, i) => {
+      const styles: React.CSSProperties = {
+        gridColumnStart: 1,
+        gridRowStart: 1,
+      };
+      if (i === selectedIndex) {
+        styles.zIndex = 1;
+      } else {
+        styles.visibility = 'hidden';
+        styles.zIndex = 0;
+      }
+      return (
         <div
           key={`stacked-elements-content-${i}`}
           data-testid={`stacked-elements-content-${i}`}
           aria-hidden={i !== selectedIndex}
-          className={`${styles.content} ${i === selectedIndex ? visibleClass : hiddenClasses}`}
+          style={styles}
         >
           {child}
         </div>
-      ))}
-    </div>
-  );
-};
-
-/* @__PURE__*/ Object.assign(StackedElements, { displayName: 'StackedElements' });
+      );
+    })}
+  </div>
+);
 
 if (process.env.NODE_ENV !== 'production') {
   StackedElements.propTypes = {

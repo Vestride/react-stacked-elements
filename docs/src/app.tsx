@@ -31,6 +31,17 @@ const App: React.FC = () => (
       </pre>
       <h3>Vertical space</h3>
       <Demo2 />
+      <pre className={styles.pre}>
+        <code>{`<StackedElements selectedIndex={isConfirmed ? 1 : 0}>
+  <button onClick={() => setIsConfirmed(true)}>Confirm</button>
+  <video autoPlay muted loop playsInline>
+    <source
+      src="https://media2.giphy.com/media/f3jZ8moRBbEvNJjOtu/giphy.mp4"
+      type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+    />
+  </video>
+</StackedElements>`}</code>
+      </pre>
     </main>
   </>
 );
