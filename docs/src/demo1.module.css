@@ -1,0 +1,11 @@
+.label {
+  font-weight: bold;
+}
+
+.checkboxWrapper {
+  display: flex;
+}
+
+.response {
+  margin-right: 8px;
+}

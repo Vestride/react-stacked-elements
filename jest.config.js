@@ -13,4 +13,8 @@ module.exports = {
       },
     ],
   },
+  testPathIgnorePatterns: ['node_modules', '<rootDir>/docs'],
+  moduleNameMapper: {
+    '\\.css$': 'identity-obj-proxy',
+  },
 };
