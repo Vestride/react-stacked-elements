@@ -34,7 +34,7 @@ const StackedElements: React.FunctionComponent<StackedElementsProps> = ({ classN
   </div>
 );
 
-if (process.env.NODE_ENV !== 'production') {
+if (typeof process !== 'undefined' && process.env.NODE_ENV !== 'production') {
   StackedElements.propTypes = {
     children: PropTypes.arrayOf(PropTypes.element).isRequired,
     className: PropTypes.string,

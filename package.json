@@ -9,6 +9,9 @@
   "unpkg": "dist/stacked-elements.umd.js",
   "sideEffects": false,
   "scripts": {
+    "compile": "npm run build && npm run build --prefix docs",
+    "predeploy": "npm run compile",
+    "deploy": "gh-pages -d docs/build",
     "build": "microbundle --jsx React.createElement",
     "dev": "microbundle watch --jsx React.createElement",
     "test": "jest"
@@ -44,6 +47,7 @@
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "babel-jest": "^26.1.0",
+    "gh-pages": "^3.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
     "jest-circus": "^26.1.0",
