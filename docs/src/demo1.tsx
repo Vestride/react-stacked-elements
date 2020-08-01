@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import '../../dist/stacked-elements.css';
 import StackedElements from '../..';
 
 import demoStyles from './demo.module.css';

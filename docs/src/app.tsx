@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { ModeSwitcher } from './mode-switcher';
 import { Demo1 } from './demo1';
 import { Demo2 } from './demo2';
+import { Demo3 } from './demo3';
 
 import styles from './app.module.css';
 
@@ -9,12 +11,17 @@ const App: React.FC = () => (
   <>
     <header className={styles.header}>
       <div className={styles.container}>
-        <code>react-stacked-elements</code>
+        <div className={styles.headerContent}>
+          <strong>
+            <code>react-stacked-elements</code>
+          </strong>
+          <ModeSwitcher />
+        </div>
       </div>
     </header>
     <main className={styles.container}>
       <blockquote className={styles.description}>
-        Toggle the visibility of two elements without removing them from the document layout
+        Toggle the visibility of elements without causing a layout shift
       </blockquote>
       <p>Install with npm</p>
       <pre className={styles.pre}>
@@ -34,12 +41,17 @@ const App: React.FC = () => (
       <pre className={styles.pre}>
         <code>{`<StackedElements selectedIndex={isConfirmed ? 1 : 0}>
   <button onClick={() => setIsConfirmed(true)}>Confirm</button>
-  <video autoPlay muted loop playsInline>
-    <source
-      src="https://media2.giphy.com/media/f3jZ8moRBbEvNJjOtu/giphy.mp4"
-      type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-    />
-  </video>
+  <video />
+</StackedElements>`}</code>
+      </pre>
+      <h3>Multiple elements</h3>
+      <Demo3 />
+      <pre className={styles.pre}>
+        <code>{`<StackedElements selectedIndex={selectedIndex}>
+  <div className={styles.one} />
+  <div className={styles.two} />
+  <div className={styles.three} />
+  <div className={styles.four} />
 </StackedElements>`}</code>
       </pre>
     </main>

@@ -1,9 +1,42 @@
+:root {
+  --alabaster: #ecebe4;
+  --timber-wolf: #daddd8;
+  --ghost-white: #aeb8c1;
+  --charcoal: #2c333a;
+  --eerie-black: #1c1c1c;
+
+  --background-primary: #fff;
+  --accent-primary: mediumseagreen;
+  --accent-secondary: deepskyblue;
+  --accent-tertiary: mediumpurple;
+  --accent-quaternary: mediumvioletred;
+  --surface-secondary: var(--alabaster);
+  --code-block: var(--timber-wolf);
+  --text-primary: var(--eerie-black);
+  --divider: var(--charcoal);
+}
+
+:root.dark {
+  --accent-primary: hsl(147deg 40% 40%);
+  --accent-secondary: hsl(195, 70%, 50%);
+  --accent-tertiary: hsl(260, 57%, 64%);
+  --accent-quaternary: hsl(322, 81%, 43%);
+  --background-primary: var(--eerie-black);
+  --surface-secondary: var(--charcoal);
+  --code-block: var(--charcoal);
+  --text-primary: var(--timber-wolf);
+  --divider: var(--ghost-white);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 200px;
+  color: var(--text-primary);
+  background-color: var(--background-primary);
 }
 
 code {

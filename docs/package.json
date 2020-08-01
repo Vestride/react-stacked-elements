@@ -21,6 +21,11 @@
     "test": "craco test",
     "eject": "craco eject"
   },
+  "homepage": "https://vestride.github.io/react-stacked-elements",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Vestride/react-stacked-elements.git"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },

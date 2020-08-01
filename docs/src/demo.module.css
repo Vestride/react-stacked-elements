@@ -1,7 +1,7 @@
 .demo {
   margin-top: 16px;
   padding: 16px 32px;
-  background-color: ghostwhite;
-  border: 2px dashed darkgray;
+  background-color: var(--surface-secondary);
+  border: 2px dashed var(--divider);
   border-radius: 4px;
 }

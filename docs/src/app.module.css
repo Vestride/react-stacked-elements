@@ -1,9 +1,16 @@
 .header {
   position: sticky;
   top: 0;
-  padding: 16px 0;
-  border-bottom: 2px solid mediumseagreen;
-  background-color: white;
+  z-index: 10;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--accent-primary);
+  background-color: var(--background-primary);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
@@ -14,7 +21,7 @@
 }
 
 .description {
-  border-left: 2px solid darkgray;
+  border-left: 2px solid var(--divider);
   margin-left: 0;
   margin-right: 0;
   padding-left: 8px;
@@ -26,7 +33,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
+  background-color: var(--code-block);
   border-radius: 6px;
   margin-bottom: 0;
   word-break: normal;

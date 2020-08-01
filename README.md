@@ -1,3 +1,3 @@
 # react-stacked-elements
 
-> Toggle the visibility of two elements without removing them from the document layout
+> Toggle the visibility of elements without causing a layout shift

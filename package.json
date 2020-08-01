@@ -1,7 +1,7 @@
 {
   "name": "react-stacked-elements",
   "version": "1.0.0",
-  "description": "Toggle the visibility of two elements without removing them from the document layout",
+  "description": "Toggle the visibility of elements without causing a layout shift",
   "source": "src/index.tsx",
   "main": "dist/stacked-elements.js",
   "module": "dist/stacked-elements.module.js",
@@ -24,6 +24,7 @@
   ],
   "author": "Glen Cheney",
   "license": "MIT",
+  "homepage": "https://vestride.github.io/react-stacked-elements",
   "repository": {
     "type": "git",
     "url": "git://github.com/Vestride/react-stacked-elements.git"

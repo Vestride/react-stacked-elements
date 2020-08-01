@@ -1,0 +1,24 @@
+.one {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-secondary);
+}
+
+.two {
+  width: 10px;
+  height: 60px;
+  background-color: var(--accent-primary);
+}
+
+.three {
+  width: 60px;
+  height: 30px;
+  background-color: var(--accent-tertiary);
+}
+
+.four {
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-quaternary);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
