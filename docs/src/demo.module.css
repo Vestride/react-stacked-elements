@@ -1,6 +1,6 @@
 .demo {
   margin-top: 16px;
-  padding: 16px 32px;
+  padding: 16px;
   background-color: var(--surface-secondary);
   border: 2px dashed var(--divider);
   border-radius: 4px;

@@ -33,7 +33,8 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: var(--code-block);
+  background-color: var(--surface-secondary);
+  border: 1px solid var(--divider);
   border-radius: 6px;
   margin-bottom: 0;
   word-break: normal;
