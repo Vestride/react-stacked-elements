@@ -13,6 +13,23 @@
   align-items: center;
 }
 
+.headerEnd {
+  display: flex;
+  align-items: center;
+}
+
+.headerDivider {
+  padding: 0 4px;
+}
+
+.headerGithub path {
+  fill: #161614;
+}
+
+:global(.dark) .headerGithub path {
+  fill: #eff8fe;
+}
+
 .container {
   padding: 0 16px;
   margin-left: auto;
