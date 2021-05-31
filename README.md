@@ -1,4 +1,4 @@
-# react-stacked-elements [![Build Status](https://travis-ci.org/Vestride/react-stacked-elements.svg?branch=master)](https://travis-ci.org/Vestride/react-stacked-elements)
+# react-stacked-elements [![Build Status](https://travis-ci.com/Vestride/react-stacked-elements.svg?branch=main)](https://travis-ci.com/Vestride/react-stacked-elements)
 
 > Toggle the visibility of elements without causing a layout shift
 

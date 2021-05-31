@@ -1,5 +1,5 @@
 module.exports = {
-  testRunner: 'jest-circus/runner',
+  testEnvironment: 'jsdom',
   clearMocks: true,
   transform: {
     '\\.[jt]sx?$': [
