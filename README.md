@@ -1,4 +1,4 @@
-# react-stacked-elements [![Build Status](https://travis-ci.com/Vestride/react-stacked-elements.svg?branch=main)](https://travis-ci.com/Vestride/react-stacked-elements)
+# react-stacked-elements ![Build Status][actions-img]
 
 > Toggle the visibility of elements without causing a layout shift
 
@@ -22,3 +22,5 @@ npm install react-stacked-elements
 ## Demos
 
 Check them out here <https://vestride.github.io/react-stacked-elements/>
+
+[actions-img]: https://github.com/Vestride/Shuffle/actions/workflows/build.yml/badge.svg?branch=main
