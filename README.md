@@ -23,4 +23,4 @@ npm install react-stacked-elements
 
 Check them out here <https://vestride.github.io/react-stacked-elements/>
 
-[actions-img]: https://github.com/Vestride/Shuffle/actions/workflows/build.yml/badge.svg?branch=main
+[actions-img]: https://github.com/Vestride/react-stacked-elements/actions/workflows/build.yml/badge.svg?branch=main
